@@ -29,7 +29,7 @@ const ChatBox = () => {
         {chats.map((chat, index) => (
           <div key={index} className="flex flex-col">
             <strong className="text-blue-600">{chat.role=='model'?'Hitesh Sir':'Me'}:</strong>
-            <p className="whitespace-pre-wrap">{chat.parts[0].text}</p>
+            <p className="whitespace-pre-wrap text-white">{chat.parts[0].text}</p>
           </div>
         ))}
       </div>
@@ -37,7 +37,7 @@ const ChatBox = () => {
       <div className="mt-4 flex gap-2 ">
         <input
           type="text"
-          className="border rounded px-3 py-2 w-full bg-black"
+          className="border rounded px-3 py-2 w-full bg-black whitespace-pre-wrap text-white"
           placeholder="Type your message..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
