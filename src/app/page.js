@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from "react";
 import ChatBox from "./components/ChatBox";
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   return (
