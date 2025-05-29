@@ -25,8 +25,8 @@ const ChatBox = () => {
 };
 
  return (
-  <div className="p-4 w-full max-w-4xl mx-auto">
-    <div className="min-h-[600px] max-h-[400px] overflow-y-auto space-y-3 rounded-md p-4 bg-black shadow-md">
+  <div className="p-4  w-full max-w-4xl mx-auto ">
+    <div className="min-h-[580px] max-h-[400px] overflow-y-auto space-y-3 rounded-md p-4  bg-black shadow-md">
       {chats.map((chat, index) => (
         <div key={index} className="flex flex-col">
           <Chatbubble role={chat.role} text={chat.parts[0].text} />
